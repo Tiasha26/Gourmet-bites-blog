@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Bites - Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gourmet Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Welcome to Gourmet Bites</h1>
+                    <p class="lead">Discover the joy of cooking with our collection of delicious recipes and culinary tips</p>
+                    <a href="#recipes" class="btn btn-primary btn-lg">Explore Recipes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Gourmet Bites</h2>
+                    <p class="lead">Welcome to Gourmet Bites, where passion meets plate!</p>
+                    <p>Founded in 2024, Gourmet Bites is your culinary companion in the journey of discovering and creating amazing dishes. Our mission is to make cooking accessible, enjoyable, and inspiring for everyone, from beginners to seasoned chefs.</p>
+                    <p>We believe that great food brings people together, and we're here to share our love for cooking through carefully curated recipes, helpful tips, and engaging food stories.</p>
+                    <div class="mt-4">
+                        <h4>Our Values</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary me-2"></i>Quality Ingredients</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Clear Instructions</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Cultural Diversity</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Sustainable Cooking</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero-bg.jpg" alt="Our Kitchen" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes -->
+    <section id="recipes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Recipes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="carbonara">
+                        <img src="images/carbonara.jpg" class="card-img-top" alt="Spaghetti Carbonara">
+                        <div class="card-body">
+                            <h5 class="card-title">Spaghetti Carbonara</h5>
+                            <p class="card-text">A classic Italian pasta dish with creamy sauce and crispy pancetta.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">Italian</span>
+                                <a href="recipe.html?id=carbonara" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="avocado-toast">
+                        <img src="images/avocado-toast.jpg" class="card-img-top" alt="Avocado Toast">
+                        <div class="card-body">
+                            <h5 class="card-title">Avocado Toast</h5>
+                            <p class="card-text">A healthy and trendy breakfast favorite with endless variations.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Breakfast</span>
+                                <a href="recipe.html?id=avocado-toast" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="thai-curry">
+                        <img src="images/thai-curry.jpg" class="card-img-top" alt="Thai Green Curry">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai Green Curry</h5>
+                            <p class="card-text">A fragrant and spicy Thai curry packed with fresh vegetables.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning">Thai</span>
+                                <a href="recipe.html?id=thai-curry" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="mediterranean-salad">
+                        <img src="images/mediterranean-salad.jpg" class="card-img-top" alt="Mediterranean Salad">
+                        <div class="card-body">
+                            <h5 class="card-title">Mediterranean Salad</h5>
+                            <p class="card-text">Fresh and healthy Mediterranean salad with feta and olives.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info">Mediterranean</span>
+                                <a href="recipe.html?id=mediterranean-salad" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="chocolate-cake">
+                        <img src="images/chocolate-cake.jpg" class="card-img-top" alt="Chocolate Cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Chocolate Cake</h5>
+                            <p class="card-text">Rich and moist chocolate cake with ganache frosting.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger">Dessert</span>
+                                <a href="recipe.html?id=chocolate-cake" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 recipe-card" data-recipe-id="sushi-rolls">
+                        <img src="images/sushi-rolls.jpg" class="card-img-top" alt="Sushi Rolls">
+                        <div class="card-body">
+                            <h5 class="card-title">California Sushi Rolls</h5>
+                            <p class="card-text">Fresh and easy-to-make California sushi rolls.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">Japanese</span>
+                                <a href="recipe.html?id=sushi-rolls" class="btn btn-outline-primary">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Blog Posts</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4 blog-post" data-post-id="pasta-guide">
+                        <div class="card-body">
+                            <h3 class="card-title">The Art of Perfecting Pasta</h3>
+                            <p class="card-text">Learn the essential techniques for making restaurant-quality pasta at home, from choosing the right flour to mastering the perfect al dente texture.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Posted on March 15, 2024</small>
+                                <button class="btn btn-outline-primary read-more" data-post-id="pasta-guide">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 blog-post" data-post-id="superfoods">
+                        <div class="card-body">
+                            <h3 class="card-title">Top 5 Superfoods for a Healthy Diet</h3>
+                            <p class="card-text">Discover the nutritional powerhouses that should be in your kitchen, and learn how to incorporate them into your daily meals.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Posted on March 10, 2024</small>
+                                <button class="btn btn-outline-primary read-more" data-post-id="superfoods">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Categories</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none">Cooking Tips</a></li>
+                                <li><a href="#" class="text-decoration-none">Kitchen Hacks</a></li>
+                                <li><a href="#" class="text-decoration-none">Food Science</a></li>
+                                <li><a href="#" class="text-decoration-none">Restaurant Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get weekly recipes, cooking tips, and more delivered to your inbox!</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Gourmet Bites</h5>
+                    <p>Your go-to source for delicious recipes and culinary inspiration.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Recipes</a></li>
+                        <li><a href="#" class="text-white">Blog</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Gourmet Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
