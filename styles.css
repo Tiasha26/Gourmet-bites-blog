@@ -25,7 +25,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -226,12 +226,12 @@ footer a:hover {
 
 /* Image Loading Animation */
 img {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
-img.loaded {
-    opacity: 1;
+img.loading {
+    opacity: 0;
 }
 
 /* Responsive Modal */

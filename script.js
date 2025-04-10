@@ -101,9 +101,23 @@ document.querySelectorAll('.recipe-card').forEach(card => {
 
 // Add loading animation for images
 document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('load', function() {
-        this.classList.add('loaded');
-    });
+    // Add loading class initially
+    img.classList.add('loading');
+    
+    // Check if image is already loaded
+    if (img.complete) {
+        img.classList.remove('loading');
+    } else {
+        img.addEventListener('load', function() {
+            this.classList.remove('loading');
+        });
+        
+        // Handle image loading errors
+        img.addEventListener('error', function() {
+            console.error('Failed to load image:', this.src);
+            this.classList.remove('loading');
+        });
+    }
 });
 
 // Initialize tooltips
